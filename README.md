@@ -1,4 +1,5 @@
 # About
+Live version: https://eth-message-board.web.app
 
 I used this project to learn the basics of writing smart contracts and interacting with them from a web frontend. 
 

@@ -63,7 +63,13 @@ const Chat: React.FC<Props> = ({ contract, userAddress }) => {
           );
 
           if (cleanMessages.length > 0) {
-            setMessages(cleanMessages);
+            setMessages(
+              cleanMessages.filter(
+                (each: any) =>
+                  each.authorAddress !==
+                  "0x0000000000000000000000000000000000000000"
+              )
+            );
           }
         }
       })();
